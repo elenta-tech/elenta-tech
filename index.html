@@ -12,6 +12,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        accent: '#ec4899',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white text-gray-900">
@@ -122,7 +141,194 @@
         </div>
     </section>
 
-    <!-- Services Section - Content continues in next file due to length -->
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold text-sm uppercase tracking-wider">Our Services</span>
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-dark mt-4 mb-6">
+                    Powerful Solutions for <span class="gradient-text">Modern Businesses</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We combine creativity and technology to deliver solutions that drive real business results.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="card-hover bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/10">
+                    <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-2xl text-dark mb-4">Website Design & Development</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Stunning, high-performance websites that convert visitors into customers. We build responsive, SEO-optimized sites that reflect your brand and drive results.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Custom responsive design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-700">SEO optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Fast loading speeds</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Mobile-first approach</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="card-hover bg-gradient-to-br from-secondary/5 to-accent/5 rounded-2xl p-8 border border-secondary/10">
+                    <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-2xl text-dark mb-4">Business Automation</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Streamline operations and eliminate repetitive tasks with intelligent automation solutions that save time and reduce costs.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Workflow automation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Process optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Integration solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Data synchronization</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="card-hover bg-gradient-to-br from-accent/5 to-primary/5 rounded-2xl p-8 border border-accent/10">
+                    <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-2xl text-dark mb-4">Lead Generation & Growth</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Attract, capture, and nurture leads with data-driven strategies and automated communication systems that scale your business.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-700">Lead capture systems</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-700">Email automation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-700">CRM integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-700">Analytics & reporting</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-24 gradient-bg-alt">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold text-sm uppercase tracking-wider">Complete Solutions</span>
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-white mt-4 mb-6">
+                    Everything You Need to <span class="gradient-text">Succeed Online</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    From concept to execution, we provide end-to-end solutions tailored to your business goals.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-comments text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white mb-2">Communication Automation</h3>
+                    <p class="text-gray-400 text-sm">Automated email sequences, SMS campaigns, and chatbot integration</p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+                    <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shopping-cart text-secondary text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white mb-2">E-Commerce Solutions</h3>
+                    <p class="text-gray-400 text-sm">Full-featured online stores with payment processing and inventory management</p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+                    <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white mb-2">Mobile Optimization</h3>
+                    <p class="text-gray-400 text-sm">Responsive design ensuring perfect experience on all devices</p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white mb-2">Security & Hosting</h3>
+                    <p class="text-gray-400 text-sm">Secure, fast, and reliable hosting with SSL certificates included</p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+                    <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-search text-secondary text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white mb-2">SEO & Marketing</h3>
+                    <p class="text-gray-400 text-sm">Search engine optimization and digital marketing strategies</p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+                    <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-sync-alt text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white mb-2">API Integrations</h3>
+                    <p class="text-gray-400 text-sm">Connect your favorite tools and platforms seamlessly</p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-bar text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white mb-2">Analytics & Insights</h3>
+                    <p class="text-gray-400 text-sm">Track performance with detailed analytics and reporting</p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+                    <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-secondary text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-white mb-2">Ongoing Support</h3>
+                    <p class="text-gray-400 text-sm">Dedicated support and maintenance to keep you running smoothly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process, CTA, Contact, Footer Sections -->
+    <div id="additional-sections"></div>
+
     <script src="main.js"></script>
 </body>
 </html>
